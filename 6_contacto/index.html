@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Canon Tracker | Contacto</title>
+</head>
+
+<body>
+    <div class="main-container contacto">
+        <h4>Nos gustaría saber cúal fue tu experiencia en Canon Tracker</h4>
+        <form id="formulario">
+            <fieldset>
+                <legend>¿Cuál de nuestros planes te gustó?</legend>
+
+                <input type="checkbox" id="basico" name="basico" value="basico">
+                <label for="basico">Básico</label>
+                <input type="checkbox" id="clasico" name="clasico" value="clasico">
+                <label for="clasico">Clásico</label>
+                <input type="checkbox" name="moderno" id="moderno" value="moderno">
+                <label for="moderno">Moderno</label>
+                <input type="checkbox" name="contemporaneo" id="contemporaneo" value="contemporaneo">
+                <label for="contemporaneo">Contemporáneo</label>
+            </fieldset>
+            <fieldset>
+                <legend>¿Cómo nos calificarías?</legend>
+                <input type="radio" name="rating" id="1" value="1">
+                <label for="1">1</label>
+                <input type="radio" name="rating" id="2" value="2">
+                <label for="2">2</label>
+                <input type="radio" name="rating" id="3" value="3">
+                <label for="3">3</label>
+                <input type="radio" name="rating" id="4" value="4">
+                <label for="4">4</label>
+                <input type="radio" name="rating" id="5" value="5" checked>
+                <label for="5">5</label>
+            </fieldset>
+            <label for="nombre">Tu nombre</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="María">
+            <label for="email">Tu email</label>
+            <input type="email" name="email" id="email" placeholder="maria@web.com">
+            <label for="comentarios">Dejanos tus comentarios</label>
+            <input type="text" name="comentarios" id="comentarios" maxlength="50" placeholder="hasta 50 caracteres...">
+            <input type="submit" value="Enviar">
+        </form>
+        <a class="home" href="../index.html">Home</a>
+    </div>
+
+    <script src="./formscript.js"></script>
+</body>
+
+</html>

@@ -1,8 +1,234 @@
-/* $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-); */
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Courgette&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {  
+  margin: 0;
+  background-image: url(./img/libros.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h3,h4 {
+  font-family: 'Courgette', cursive;
+  margin: 0;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+p, span, small, label, legend {
+  font-family: 'Barlow', sans-serif;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+    max-width: 150px;
+}
+
+button {
+   background-color: brown;
+   color: #fff;
+   border-radius: 5px;
+   padding: 10px 15px;
+   border: none;
+   font-size: 1.1em;
+}
+
+.main-container {
+  background-color: antiquewhite;
+  min-height: 90vh;
+  width: 1200px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container.casa {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container.casa header {
+  background-color: bisque;
+  width: 100%;
+}
+
+.main-container.casa header ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-container.casa header ul li {
+  font-size: 2em;
+  font-family: 'Courgette', cursive;
+}
+
+.main-container.casa header ul li a {
+  color: #dc4614;
+}
+
+
+.main-container.casa footer {
+  background-color: bisque;
+  width: 100%;
+}
+
+.main-container.casa footer a {
+  color: #dc4614;
+}
+
+.main-container.intro{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 60px;
+}
+
+.main-container.intro h3 {
+  margin: 30px;
+}
+
+.main-container.intro p {
+    margin: 40px 0;
+}
+
+.main-container.canon li a{
+  color: crimson;
+}
+
+.main-container.contacto h4 {
+  font-size: 2em;
+  margin-top: 40px;
+}
+
+.main-container.contacto form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.menu-item a {
+  text-decoration: none;
+}
+
+
+/* GALERIA */
+
+.galeria {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.galeria img {
+  cursor: pointer;
+}
+
+.galeria .modal {
+  display: none;
+}
+
+.galeria .modal-activo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+.galeria .modal .modal-content {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria .modal .modal-content small {
+  cursor: pointer;
+}
+
+/* JUEGO */
+
+.container-juego {
+  display: none;
+}
+
+.container-juego.activo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.container-juego.activo .obras {
+  display: flex;
+  gap: 40px;
+}
+
+.container-juego.activo .obras .obra {
+  background-color: bisque;
+  padding: 30px;
+  border: 3px dashed crimson;
+  border-radius: 5px;
+}
+
+.container-juego.activo .autores {
+  display: flex;
+  gap: 70px;
+  max-height: 200px;
+}
+
+.container-juego.activo .autores .autor {
+  border: 5px solid goldenrod;
+  border-radius: 5px;
+}
+
+.obras p {
+  cursor: pointer;
+}
+
+.home {
+  position: fixed;
+  bottom: 50px;
+  left: calc(50% - 50px);
+  text-transform: uppercase;
+  color: black;
+  text-decoration: dotted line-through;
+  font-size: 2em;
+}

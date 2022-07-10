@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Canon Tracker | Mi Lista</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <h3>Mi lista</h3>
+        <p>Elige cual plan quieres leer!</p>
+
+        <div class="lista-container">
+            <label for="plan">Elige un Plan: </label>
+            <select name="plan" id="plan">
+                <option value="">Selecciona una opción</option>
+                <option value="basico">Plan Básico</option>
+                <option value="clasico">Plan Clásico</option>
+                <option value="moderno">Plan Moderno</option>
+                <option value="contemporaneo">Plan Contemporaneo</option>
+            </select>
+            <button id="boton-elegir">Elegir</button>
+            <div id="lista-display"></div>
+        </div>
+        <a class="home" href="../index.html">Home</a>
+    </div>
+
+    <script src="./lista.js"></script>
+</body>
+
+</html>
